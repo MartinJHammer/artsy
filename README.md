@@ -1,2 +1,9 @@
-# Scripts
-All scripts should be written in powershell to ensure script consistency.
+# Artsy
+
+## Idea
+
+## Features
+
+## Todo
+- User management
+- ???
