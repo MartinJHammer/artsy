@@ -6,6 +6,7 @@ import {RestExplorerBindings, RestExplorerComponent} from '@loopback/rest-explor
 import {ServiceMixin} from '@loopback/service-proxy';
 import path from 'path';
 import {MySequence} from './sequence';
+import {CrudRestComponent} from '@loopback/rest-crud';
 
 export class ArtsyApplication extends BootMixin(
   ServiceMixin(RepositoryMixin(RestApplication)),
@@ -35,5 +36,6 @@ export class ArtsyApplication extends BootMixin(
         nested: true,
       },
     };
+    this.component(CrudRestComponent);
   }
 }

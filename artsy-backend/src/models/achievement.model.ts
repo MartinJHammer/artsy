@@ -1,7 +1,13 @@
-import {Model, model, property} from '@loopback/repository';
+import {Entity, model, property} from '@loopback/repository';
 
 @model()
-export class Achievement extends Model {
+export class Achievement extends Entity {
+  @property({
+    id: true,
+    description: 'The unique identifier for an achievement',
+  })
+  id: string;
+
   @property({
     type: 'string',
     required: true,
